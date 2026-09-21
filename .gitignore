@@ -1,0 +1,18 @@
+# Target build directory (Maven output)
+target/
+*.jar
+*.war
+*.ear
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
