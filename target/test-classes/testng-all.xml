@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="IssuerPro Full Automation Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.issuerpro.listeners.TestListener" />
+    </listeners>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.issuerpro.api.ResetAndSeedApiTest" />
+            <class name="com.issuerpro.api.AuthApiTest" />
+            <class name="com.issuerpro.api.CustomerApiTest" />
+            <class name="com.issuerpro.api.TransactionApiTest" />
+        </classes>
+    </test>
+
+    <test name="UI Tests">
+        <classes>
+            <class name="com.issuerpro.ui.LoginUiTest" />
+            <class name="com.issuerpro.ui.DashboardUiTest" />
+            <class name="com.issuerpro.ui.CustomersUiTest" />
+        </classes>
+    </test>
+</suite>

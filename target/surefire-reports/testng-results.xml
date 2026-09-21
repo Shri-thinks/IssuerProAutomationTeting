@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-21T14:46:21 IST" name="IssuerPro Full Automation Suite" finished-at="2026-09-21T14:47:16 IST" duration-ms="54371">
+    <groups>
+    </groups>
+    <test started-at="2026-09-21T14:46:21 IST" name="API Tests" finished-at="2026-09-21T14:46:40 IST" duration-ms="18746">
+      <class name="com.issuerpro.api.AuthApiTest">
+        <test-method signature="testAdminLoginSuccess()[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:27 IST" name="testAdminLoginSuccess" description="Verify successful API authentication for Admin role" finished-at="2026-09-21T14:46:28 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdminLoginSuccess -->
+        <test-method signature="testAllRolesLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:28 IST" name="testAllRolesLogin" description="Verify authentication across all configured roles" data-provider="apiRoleUsers" finished-at="2026-09-21T14:46:30 IST" duration-ms="1684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[operations]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ops@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OPERATIONS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllRolesLogin -->
+        <test-method signature="testAllRolesLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:30 IST" name="testAllRolesLogin" description="Verify authentication across all configured roles" data-provider="apiRoleUsers" finished-at="2026-09-21T14:46:31 IST" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[csagent]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cs@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CUSTOMER_SERVICE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllRolesLogin -->
+        <test-method signature="testAllRolesLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:31 IST" name="testAllRolesLogin" description="Verify authentication across all configured roles" data-provider="apiRoleUsers" finished-at="2026-09-21T14:46:31 IST" duration-ms="493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Support@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUPPORT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllRolesLogin -->
+        <test-method signature="testGetCurrentUser()[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:31 IST" name="testGetCurrentUser" description="Verify that /auth/me returns the authenticated user session" finished-at="2026-09-21T14:46:33 IST" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCurrentUser -->
+        <test-method signature="testInvalidLoginReturns401()[pri:0, instance:com.issuerpro.api.AuthApiTest@2d0399f4]" started-at="2026-09-21T14:46:33 IST" name="testInvalidLoginReturns401" description="Verify that invalid credentials return HTTP 401 Unauthorized" finished-at="2026-09-21T14:46:33 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginReturns401 -->
+      </class> <!-- com.issuerpro.api.AuthApiTest -->
+      <class name="com.issuerpro.api.TransactionApiTest">
+        <test-method signature="testGetDashboardStats()[pri:0, instance:com.issuerpro.api.TransactionApiTest@66ea810]" started-at="2026-09-21T14:46:36 IST" name="testGetDashboardStats" description="Verify retrieving dashboard summary statistics via GET /dashboard/stats" finished-at="2026-09-21T14:46:37 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDashboardStats -->
+        <test-method signature="testGetTransactions()[pri:0, instance:com.issuerpro.api.TransactionApiTest@66ea810]" started-at="2026-09-21T14:46:37 IST" name="testGetTransactions" description="Verify retrieving transaction feed via GET /transactions" finished-at="2026-09-21T14:46:38 IST" duration-ms="1011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransactions -->
+        <test-method signature="testPurchaseAuthorization()[pri:0, instance:com.issuerpro.api.TransactionApiTest@66ea810]" started-at="2026-09-21T14:46:38 IST" name="testPurchaseAuthorization" description="Verify submitting a purchase transaction to the authorization engine" finished-at="2026-09-21T14:46:40 IST" duration-ms="2549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPurchaseAuthorization -->
+      </class> <!-- com.issuerpro.api.TransactionApiTest -->
+      <class name="com.issuerpro.api.CustomerApiTest">
+        <test-method signature="testCreateCustomer()[pri:0, instance:com.issuerpro.api.CustomerApiTest@14dd7b39]" started-at="2026-09-21T14:46:33 IST" name="testCreateCustomer" description="Verify onboarding a new customer via POST /customers" finished-at="2026-09-21T14:46:35 IST" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCustomer -->
+        <test-method signature="testGetCustomers()[pri:0, instance:com.issuerpro.api.CustomerApiTest@14dd7b39]" started-at="2026-09-21T14:46:35 IST" name="testGetCustomers" description="Verify retrieving customer list via GET /customers" finished-at="2026-09-21T14:46:36 IST" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCustomers -->
+      </class> <!-- com.issuerpro.api.CustomerApiTest -->
+      <class name="com.issuerpro.api.ResetAndSeedApiTest">
+        <test-method signature="testResetAndSeedDatabase()[pri:0, instance:com.issuerpro.api.ResetAndSeedApiTest@7dfb0c0f]" started-at="2026-09-21T14:46:21 IST" name="testResetAndSeedDatabase" description="Verify reseeding test database via POST /admin/reset" finished-at="2026-09-21T14:46:27 IST" duration-ms="6009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetAndSeedDatabase -->
+      </class> <!-- com.issuerpro.api.ResetAndSeedApiTest -->
+    </test> <!-- API Tests -->
+    <test started-at="2026-09-21T14:46:40 IST" name="UI Tests" finished-at="2026-09-21T14:47:16 IST" duration-ms="35588">
+      <class name="com.issuerpro.ui.DashboardUiTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.DashboardUiTest@72d6b3ba]" started-at="2026-09-21T14:47:08 IST" name="setUp" finished-at="2026-09-21T14:47:10 IST" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDashboardOverviewWidgets()[pri:0, instance:com.issuerpro.ui.DashboardUiTest@72d6b3ba]" started-at="2026-09-21T14:47:10 IST" name="testDashboardOverviewWidgets" description="Verify that dashboard elements and navigation widgets are rendered properly" finished-at="2026-09-21T14:47:12 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDashboardOverviewWidgets -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.DashboardUiTest@72d6b3ba]" started-at="2026-09-21T14:47:12 IST" name="tearDown" finished-at="2026-09-21T14:47:12 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.issuerpro.ui.DashboardUiTest -->
+      <class name="com.issuerpro.ui.CustomersUiTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.CustomersUiTest@1787f2a0]" started-at="2026-09-21T14:47:12 IST" name="setUp" finished-at="2026-09-21T14:47:13 IST" duration-ms="1171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCustomerDirectoryTableAndSearch()[pri:0, instance:com.issuerpro.ui.CustomersUiTest@1787f2a0]" started-at="2026-09-21T14:47:13 IST" name="testCustomerDirectoryTableAndSearch" description="Verify Customer Directory navigation and table display" finished-at="2026-09-21T14:47:16 IST" duration-ms="2600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerDirectoryTableAndSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.CustomersUiTest@1787f2a0]" started-at="2026-09-21T14:47:16 IST" name="tearDown" finished-at="2026-09-21T14:47:16 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.issuerpro.ui.CustomersUiTest -->
+      <class name="com.issuerpro.ui.LoginUiTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:40 IST" name="setUp" finished-at="2026-09-21T14:46:42 IST" duration-ms="2077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAdminLoginAndLogout()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:42 IST" name="testAdminLoginAndLogout" description="Verify successful login with valid Admin credentials and subsequent logout" finished-at="2026-09-21T14:46:46 IST" duration-ms="3826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdminLoginAndLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:46 IST" name="tearDown" finished-at="2026-09-21T14:46:46 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:46 IST" name="setUp" finished-at="2026-09-21T14:46:48 IST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDemoButtonAutofill()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:48 IST" name="testDemoButtonAutofill" description="Verify demo role quick fill button populates input fields" finished-at="2026-09-21T14:46:49 IST" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemoButtonAutofill -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:49 IST" name="tearDown" finished-at="2026-09-21T14:46:50 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:50 IST" name="setUp" finished-at="2026-09-21T14:46:51 IST" duration-ms="1611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLoginShowsErrorMessage()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:51 IST" name="testInvalidLoginShowsErrorMessage" description="Verify that invalid credentials display an appropriate error message" finished-at="2026-09-21T14:46:54 IST" duration-ms="2319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginShowsErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:54 IST" name="tearDown" finished-at="2026-09-21T14:46:54 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:54 IST" name="setUp" finished-at="2026-09-21T14:46:56 IST" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiRoleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:56 IST" name="testMultiRoleLogin" description="Verify login for multiple platform roles" data-provider="roleCredentials" finished-at="2026-09-21T14:46:59 IST" duration-ms="3036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[operations]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ops@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[OPERATIONS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiRoleLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:59 IST" name="tearDown" finished-at="2026-09-21T14:46:59 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:46:59 IST" name="setUp" finished-at="2026-09-21T14:47:01 IST" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiRoleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:47:01 IST" name="testMultiRoleLogin" description="Verify login for multiple platform roles" data-provider="roleCredentials" finished-at="2026-09-21T14:47:04 IST" duration-ms="2639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[csagent]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cs@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CUSTOMER_SERVICE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiRoleLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:47:04 IST" name="tearDown" finished-at="2026-09-21T14:47:04 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:47:04 IST" name="setUp" finished-at="2026-09-21T14:47:05 IST" duration-ms="1477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiRoleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:47:05 IST" name="testMultiRoleLogin" description="Verify login for multiple platform roles" data-provider="roleCredentials" finished-at="2026-09-21T14:47:08 IST" duration-ms="2799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[support]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Support@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUPPORT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiRoleLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.issuerpro.ui.LoginUiTest@21d03963]" started-at="2026-09-21T14:47:08 IST" name="tearDown" finished-at="2026-09-21T14:47:08 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.issuerpro.ui.LoginUiTest -->
+    </test> <!-- UI Tests -->
+  </suite> <!-- IssuerPro Full Automation Suite -->
+</testng-results>
